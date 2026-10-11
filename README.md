@@ -1,5 +1,7 @@
-# room8-legal
+# Room8 Legal
 Terms of Service, Privacy Policy, and other legal documents for Room8.
+
+Published at https://roomeightapp.github.io/legal/
 
 These cover the **TestFlight beta** — a pre-release build. These documents will get revisiting before a public App Store release.
 

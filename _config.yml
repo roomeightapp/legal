@@ -5,5 +5,5 @@ description: Terms of Service, Privacy Policy and Usage Analytics for the Room8 
 # served from a deep path (GitHub Pages renders 404.html at whatever URL was
 # requested, so relative links would break there).
 # On a custom domain later: set url to the domain and baseurl to "".
-url: https://emptyoffice.github.io
-baseurl: /room8-legal
+url: https://roomeightapp.github.io
+baseurl: /legal
