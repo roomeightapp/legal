@@ -1,16 +1,29 @@
 ---
 layout: default
 ---
-<a class="back" href="{{ site.baseurl }}/">&larr; All documents</a>
+<article class="doc">
+  <header class="doc-head wrap">
+    <p class="product-name"><a href="{{ site.baseurl }}/">Room8 Legal</a></p>
+    <h1 class="headline-xl">{{ page.title }}</h1>
+    {% if page.updated %}<p class="meta">{{ page.updated }}</p>{% endif %}
+  </header>
 
-<article class="doc card">
-  <h1>{{ page.title }}</h1>
-  {% if page.updated %}<p class="meta">{{ page.updated }}</p>{% endif %}
-  {{ content }}
+  <div class="doc-grid wrap">
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol id="tocList"></ol>
+    </nav>
+
+    <div class="doc-body">
+      {{ content }}
+
+      {% if page.next_title %}
+      <a class="doc-next" href="{{ site.baseurl }}/{{ page.next_url }}">
+        <span class="doc-next-label">Next</span>
+        <span class="doc-next-title">{{ page.next_title }}</span>
+        <span class="link">Read <span aria-hidden="true">›</span></span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
 </article>
-
-{% if page.next_title %}
-<nav class="doc-next">
-  <a href="{{ site.baseurl }}/{{ page.next_url }}"><span>Next</span> {{ page.next_title }} &rarr;</a>
-</nav>
-{% endif %}
