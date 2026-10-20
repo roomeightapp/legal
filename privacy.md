@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Privacy Policy
-updated: Last updated 19 September 2026.
+updated: Last updated 17 October 2026.
 description: What the Room8 TestFlight beta collects, who processes it, and how long it is kept.
 next_title: Terms of Service
 next_url: terms.html
@@ -15,7 +15,8 @@ Every category below corresponds to data the app actually stores.
 | --- | --- | --- |
 | Account | Name, email, username, date of birth, phone, password handled by Supabase | Create and secure your account; confirm you are old enough |
 | Profile | Photo, pronouns, gender, bio, interests, university, major, graduation year, lifestyle answers, links, payment handles | Show you to your household; entirely optional beyond name and email |
-| Household | Group name, address or location, membership, roles | Group people who live together |
+| Household | Group name, address or location, membership, roles, host-selected home area and radius | Group people who live together; define the shared home area |
+| Home status (optional) | Latest Home, Away, or Unknown status, sharing preference, reporting-device identifier, observation time, and home-area version | Show your household whether you are home when you choose to share |
 | Messages | Message text, photos, files, voice notes, reactions, read state | Deliver conversations to your household |
 | Calendar & chores | Events, chores, assignments, reminders, swaps, nudges | Run the shared calendar |
 | Connected calendar | Feed URL (secret), the next few weeks of events, sync time | Show your household when you are busy |
@@ -24,6 +25,16 @@ Every category below corresponds to data the app actually stores.
 | Shopping & inventory | Items, quantities, categories, costs, who added and who bought | Run the shared list |
 | Usage analytics (optional) | Screens viewed, feature interactions, event times, app/device information, analytics identifiers and an internal account ID when signed in | Understand feature adoption and improve usability and reliability |
 | Device | Push token, device id, platform, last seen | Send notifications you have enabled |
+
+### Optional Home status
+
+Home status is off by default. If you enable it and grant the device permissions, your device compares its location with the home area selected by the household host. Background location access allows this check when Room8 is not open. Room8 does not upload your device coordinates for this feature or show them to roommates. Your household sees only **Home**, **Away**, or **Unknown**; it does not receive your route, distance from home, or a map of your personal location.
+
+The shared home area is different from your personal location: its center and radius are stored by Room8 and supplied to household devices so they can make the comparison. Room8 also processes the latest status and its observation time. These records are not end-to-end encrypted from Room8; encryption in transit does not prevent the service from processing the shared home area and status. We do not promise that Room8 cannot access those records.
+
+You can turn status sharing off in your household's location settings. Once that change reaches the server, your status becomes Unknown. Revoking location permissions or losing connectivity can delay an update; stale observations become Unknown after 5 minutes. Only one device reports your status for a household at a time. Home status is an estimate, not a safety or attendance service, and mobile operating systems may delay background updates.
+
+We keep one current presence record per household member rather than a movement history. New observations replace the previous status and time. The home-area configuration remains available for the household. Routine backups may retain earlier database records until they age out. Device coordinates and presence details are not sent to usage analytics.
 
 ### Optional usage analytics
 
