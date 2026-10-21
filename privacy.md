@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Privacy Policy
-updated: Last updated 19 September 2026.
+updated: Last updated 21 October 2026.
 description: What the Room8 TestFlight beta collects, who processes it, and how long it is kept.
 next_title: Terms of Service
 next_url: terms.html
@@ -24,6 +24,11 @@ Every category below corresponds to data the app actually stores.
 | Shopping & inventory | Items, quantities, categories, costs, who added and who bought | Run the shared list |
 | Usage analytics (optional) | Screens viewed, feature interactions, event times, app/device information, analytics identifiers and an internal account ID when signed in | Understand feature adoption and improve usability and reliability |
 | Device | Push token, device id, platform, last seen | Send notifications you have enabled |
+| In-app surveys (optional) | Answers you submit, your internal account ID, submission time and survey dismissal records | Let Room8 administrators review feedback to improve the app and avoid repeated prompts |
+
+### Optional in-app surveys
+
+Survey participation is optional. Responses are linked to your Room8 account and are not anonymous. Only authorized Room8 administrators can review them; they are not shared with your household or sent as usage analytics events. Survey responses are stored separately from optional usage analytics. They remain stored until removed through a deletion request or deletion of the underlying profile record; disabling usage analytics does not delete them.
 
 ### Optional usage analytics
 
