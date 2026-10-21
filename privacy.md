@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Privacy Policy
-updated: Last updated 19 September 2026.
+updated: Last updated 21 October 2026.
 description: What the Room8 TestFlight beta collects, who processes it, and how long it is kept.
 next_title: Terms of Service
 next_url: terms.html
@@ -14,8 +14,9 @@ Every category below corresponds to data the app actually stores.
 | Category | Examples | Why |
 | --- | --- | --- |
 | Account | Name, email, username, date of birth, phone, password handled by Supabase | Create and secure your account; confirm you are old enough |
-| Profile | Photo, pronouns, gender, bio, interests, university, major, graduation year, lifestyle answers, links, payment handles | Show you to your household; entirely optional beyond name and email |
-| Household | Group name, address or location, membership, roles | Group people who live together |
+| Country and education | Country of residence, student status, and, for students, university country and university selected from a preset list | Configure country-specific onboarding and address search; record education separately from where you live |
+| Profile | Photo, pronouns, gender, bio, interests, major, graduation year, lifestyle answers, links, payment handles | Show profile information to your household; the app identifies required and optional fields |
+| Household | Group name, country, address or location, membership, roles | Group people who live together |
 | Messages | Message text, photos, files, voice notes, reactions, read state | Deliver conversations to your household |
 | Calendar & chores | Events, chores, assignments, reminders, swaps, nudges | Run the shared calendar |
 | Connected calendar | Feed URL (secret), the next few weeks of events, sync time | Show your household when you are busy |
@@ -24,6 +25,8 @@ Every category below corresponds to data the app actually stores.
 | Shopping & inventory | Items, quantities, categories, costs, who added and who bought | Run the shared list |
 | Usage analytics (optional) | Screens viewed, feature interactions, event times, app/device information, analytics identifiers and an internal account ID when signed in | Understand feature adoption and improve usability and reliability |
 | Device | Push token, device id, platform, last seen | Send notifications you have enabled |
+
+New-account onboarding requires a country of residence. Students also select their university and its country, which can differ from their country of residence, including for online study. A university selection is self-reported and is not proof of enrollment. Country and university selections are not included in optional analytics events.
 
 ### Optional usage analytics
 
