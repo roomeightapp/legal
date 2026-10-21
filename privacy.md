@@ -28,7 +28,7 @@ Every category below corresponds to data the app actually stores.
 
 ### Optional in-app surveys
 
-Survey participation is optional. Responses are linked to your Room8 account and are not anonymous. Only authorized Room8 administrators can review them; they are not shared with your household or sent as usage analytics events. Survey responses are stored separately from optional usage analytics. They remain stored until removed through a deletion request or deletion of the underlying profile record; disabling usage analytics does not delete them.
+Survey participation is optional. Responses are linked to your Room8 account and are not anonymous. Only authorized Room8 administrators can review them; they are not shared with your household or sent as usage analytics events. Survey responses are stored separately from optional usage analytics. Responses and survey dismissal records are removed when you delete your Room8 account. You can also request their deletion using the contact details below. Disabling usage analytics does not delete survey responses.
 
 ### Optional usage analytics
 
